@@ -1,11 +1,13 @@
 let letra = prompt("ingrese una palabra");
 
 function capitalizar(letra) {
-  letra.toUpperCase();
   let arreglo = letra.split("");
-  for (let i = 1; i <= arreglo.length; i++) {
-    arreglo.toLowerCase();
+  for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i] == 0) {
+      arreglo[0].toUperCase();
+    }
+    console.log(arreglo[i])
   }
-  console.log(letra + arreglo)
+  
 }
 capitalizar(letra);
